@@ -12,7 +12,7 @@ categories = [
     "development-tools::cargo-plugins",
 ]
 description = "This extends Cargo to allow you to add and remove dependencies by modifying your `Cargo.toml` file from the command line. It contains `cargo add`, `cargo rm`, and `cargo upgrade`."
-documentation = "https://github.com/killercup/cargo-edit/blob/master/README.md#available-subcommands"
+documentation = "https://github.com/pinkforest/cargo-edit/blob/master/README.md#available-subcommands"
 homepage = "https://github.com/pinkforest/cargo-edit-9"
 keywords = [
     "cargo",
@@ -24,8 +24,8 @@ keywords = [
 license = "Apache-2.0 OR MIT"
 name = "cargo-edit-9"
 readme = "README.md"
-repository = "https://github.com/killercup/cargo-edit"
-version = "0.9.2"
+repository = "https://github.com/pinkforest/cargo-edit"
+version = "0.9.3"
 edition = "2021"
 resolver = "2"
 
