@@ -1,12 +1,11 @@
 # cargo edit
 
-This is a cargo-edit 0.9 backport for bumping git2 for API compatibility reasons.
-
-See: https://github.com/killercup/cargo-edit/issues/837
-
-The original and current repository can be found at: [killercurp/cargo-edit](https://github.com/killercup/cargo-edit)
-
-In the long term this dependency is expected to disappear and be merged into cargo.
+[![Build Status](https://github.com/killercup/cargo-edit/workflows/build/badge.svg)](https://github.com/killercup/cargo-edit/actions)
+[![Build Status](https://travis-ci.org/killercup/cargo-edit.svg?branch=master)](https://travis-ci.org/killercup/cargo-edit)
+[![Build status](https://ci.appveyor.com/api/projects/status/m23rnkaxhipb23i9/branch/master?svg=true)](https://ci.appveyor.com/project/killercup/cargo-edit/branch/master)
+[![Coverage Status](https://coveralls.io/repos/killercup/cargo-edit/badge.svg?branch=master&service=github)](https://coveralls.io/github/killercup/cargo-edit?branch=master)
+[![crates.io](https://img.shields.io/crates/v/cargo-edit.svg)](https://crates.io/crates/cargo-edit)
+[![Join the chat at https://gitter.im/cargo-edit/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/cargo-edit/Lobby)
 
 This tool extends [Cargo](http://doc.crates.io/) to allow you to add, remove, and upgrade dependencies by modifying your `Cargo.toml` file from the command line.
 
@@ -17,12 +16,15 @@ Currently available subcommands:
 - [`cargo upgrade`](#cargo-upgrade)
 - [`cargo set-version`](#cargo-set-version)
 
-[![Build Status](https://github.com/killercup/cargo-edit/workflows/build/badge.svg)](https://github.com/killercup/cargo-edit/actions)
-[![Build Status](https://travis-ci.org/killercup/cargo-edit.svg?branch=master)](https://travis-ci.org/killercup/cargo-edit)
-[![Build status](https://ci.appveyor.com/api/projects/status/m23rnkaxhipb23i9/branch/master?svg=true)](https://ci.appveyor.com/project/killercup/cargo-edit/branch/master)
-[![Coverage Status](https://coveralls.io/repos/killercup/cargo-edit/badge.svg?branch=master&service=github)](https://coveralls.io/github/killercup/cargo-edit?branch=master)
-[![crates.io](https://img.shields.io/crates/v/cargo-edit.svg)](https://crates.io/crates/cargo-edit)
-[![Join the chat at https://gitter.im/cargo-edit/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/cargo-edit/Lobby)
+## Fork Version
+
+This is a cargo-edit 0.9 backport for bumping git2 for API compatibility reasons.
+
+See: https://github.com/killercup/cargo-edit/issues/837
+
+The original and current repository can be found at: [killercurp/cargo-edit](https://github.com/killercup/cargo-edit)
+
+In the long term this dependency is expected to disappear and be merged into cargo.
 
 ## Contribution
 
