@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog].
 <!-- next-header -->
 ## Unreleased - ReleaseDate
 
+## 0.9.2 - 2023-03-20
+
+### Fixes
+
+- Bump dependencies including git2 to address a CVE
+
 ## 0.9.1 - 2022-05-17
 
 ### Fixes
