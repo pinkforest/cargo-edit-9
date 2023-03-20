@@ -439,7 +439,7 @@ impl LocalManifest {
     /// # Examples
     ///
     /// ```
-    ///   use cargo_edit::{Dependency, LocalManifest, Manifest};
+    ///   use cargo_edit_9::{Dependency, LocalManifest, Manifest};
     ///   use toml_edit;
     ///
     ///   let root = std::path::PathBuf::from("/").canonicalize().unwrap();

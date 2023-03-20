@@ -2,7 +2,7 @@ use std::io::Write;
 use std::path::Path;
 use std::path::PathBuf;
 
-use cargo_edit::{
+use cargo_edit_9::{
     colorize_stderr, find, manifest_from_pkgid, upgrade_requirement, workspace_members,
     LocalManifest,
 };

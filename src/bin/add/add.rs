@@ -7,16 +7,16 @@ use std::io::Write;
 use std::path::Path;
 use std::path::PathBuf;
 
-use cargo_edit::CargoResult;
-use cargo_edit::Context;
-use cargo_edit::{
+use cargo_edit_9::CargoResult;
+use cargo_edit_9::Context;
+use cargo_edit_9::{
     colorize_stderr, find, manifest_from_pkgid, registry_url, update_registry_index, Dependency,
     LocalManifest,
 };
-use cargo_edit::{
+use cargo_edit_9::{
     get_features_from_registry, get_manifest_from_path, get_manifest_from_url, workspace_members,
 };
-use cargo_edit::{get_latest_dependency, CrateSpec};
+use cargo_edit_9::{get_latest_dependency, CrateSpec};
 use cargo_metadata::Package;
 use clap::Args;
 use indexmap::IndexSet;

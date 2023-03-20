@@ -1,5 +1,13 @@
 # cargo edit
 
+This is a cargo-edit 0.9 backport for bumping git2 for API compatibility reasons.
+
+See: https://github.com/killercup/cargo-edit/issues/837
+
+The original and current repository can be found at: [killercurp/cargo-edit](https://github.com/killercup/cargo-edit)
+
+In the long term this dependency is expected to disappear and be merged into cargo.
+
 This tool extends [Cargo](http://doc.crates.io/) to allow you to add, remove, and upgrade dependencies by modifying your `Cargo.toml` file from the command line.
 
 Currently available subcommands:
@@ -217,8 +225,8 @@ OPTIONS:
         --to-lockfile             Upgrade all packages to the version in the lockfile
     -V, --version                 Print version information
         --workspace               Upgrade all packages in the workspace
-    -Z <FLAG>                     Unstable (nightly-only) flags [possible values: preserve-
-                                  precision]
+    -Z <FLAG>                     Unstable (nightly-only) flags [possible values:
+                                  preserve-precision]
 
 This command differs from `cargo update`, which updates the dependency versions recorded in the
 local lock file (Cargo.lock).
@@ -233,9 +241,9 @@ All packages in the workspace will be upgraded if the `--workspace` flag is supp
 `--workspace` flag may be supplied in the presence of a virtual manifest.
 
 If the '--to-lockfile' flag is supplied, all dependencies will be upgraded to the currently locked
-version as recorded in the Cargo.lock file. This flag requires that the Cargo.lock file is up-to-
-date. If the lock file is missing, or it needs to be updated, cargo-upgrade will exit with an error.
-If the '--to-lockfile' flag is supplied then the network won't be accessed.
+version as recorded in the Cargo.lock file. This flag requires that the Cargo.lock file is
+up-to-date. If the lock file is missing, or it needs to be updated, cargo-upgrade will exit with an
+error. If the '--to-lockfile' flag is supplied then the network won't be accessed.
 
 ```
 

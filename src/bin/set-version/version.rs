@@ -1,6 +1,6 @@
 use std::str::FromStr;
 
-use cargo_edit::VersionExt;
+use cargo_edit_9::VersionExt;
 
 use crate::errors::*;
 

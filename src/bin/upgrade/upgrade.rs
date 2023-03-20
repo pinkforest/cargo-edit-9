@@ -2,7 +2,7 @@ use std::collections::{BTreeMap, BTreeSet};
 use std::io::Write;
 use std::path::{Path, PathBuf};
 
-use cargo_edit::{
+use cargo_edit_9::{
     colorize_stderr, find, get_latest_dependency, manifest_from_pkgid, registry_url,
     update_registry_index, CargoResult, Context, CrateSpec, Dependency, LocalManifest,
 };
@@ -364,7 +364,7 @@ impl DesiredUpgrades {
             if preserve_precision {
                 let latest_version: semver::Version = latest_version.parse()?;
                 if let Some(version) =
-                    cargo_edit::upgrade_requirement(&old_version, &latest_version)?
+                    cargo_edit_9::upgrade_requirement(&old_version, &latest_version)?
                 {
                     upgrades.0.insert(dep, version);
                 }
@@ -404,7 +404,7 @@ impl DesiredUpgrades {
                     let locked_version = &p.version;
                     if preserve_precision {
                         if let Some(version) =
-                            cargo_edit::upgrade_requirement(&old_version, locked_version)?
+                            cargo_edit_9::upgrade_requirement(&old_version, locked_version)?
                         {
                             upgrades.0.insert(dep, version);
                         }

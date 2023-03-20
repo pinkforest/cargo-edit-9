@@ -1,5 +1,5 @@
-use cargo_edit::CargoResult;
-use cargo_edit::{colorize_stderr, manifest_from_pkgid, LocalManifest};
+use cargo_edit_9::CargoResult;
+use cargo_edit_9::{colorize_stderr, manifest_from_pkgid, LocalManifest};
 use clap::Args;
 use std::borrow::Cow;
 use std::io::Write;
